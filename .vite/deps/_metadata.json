@@ -1,0 +1,49 @@
+{
+  "hash": "1de5947d",
+  "configHash": "3649ce5b",
+  "lockfileHash": "e480603b",
+  "browserHash": "4b27cb70",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "93f39ce7",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "7b571f84",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "74965887",
+      "needsInterop": true
+    },
+    "react-bootstrap/Accordion": {
+      "src": "../../node_modules/react-bootstrap/esm/Accordion.js",
+      "file": "react-bootstrap_Accordion.js",
+      "fileHash": "7af2dc18",
+      "needsInterop": false
+    },
+    "react-bootstrap": {
+      "src": "../../node_modules/react-bootstrap/esm/index.js",
+      "file": "react-bootstrap.js",
+      "fileHash": "e426634e",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-BCIYVEEL": {
+      "file": "chunk-BCIYVEEL.js"
+    },
+    "chunk-QOVZGY7A": {
+      "file": "chunk-QOVZGY7A.js"
+    },
+    "chunk-5WQJO2FO": {
+      "file": "chunk-5WQJO2FO.js"
+    }
+  }
+}
