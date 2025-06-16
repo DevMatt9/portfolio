@@ -1,7 +1,34 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { FaCode } from "react-icons/fa";
 
-const Header = () => {
+type HeaderProps = {
+  href: string;
+  text: string;
+};
+
+const Header: React.FC = () => {
+  const header: HeaderProps[] = [
+    {
+      href: "#accueil",
+      text: "Accueil",
+    },
+    {
+      href: "#services",
+      text: "Services",
+    },
+    {
+      href: "#tarifs",
+      text: "Tarifs",
+    },
+    {
+      href: "#informations",
+      text: "À propos",
+    },
+    {
+      href: "#contact",
+      text: "Contact",
+    },
+  ];
   return (
     <Navbar bg="light" expand="lg" sticky="top">
       <Container>
@@ -11,11 +38,10 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Nav.Link href="#accueil">Accueil</Nav.Link>
-            <Nav.Link href="#services">Services</Nav.Link>
-            <Nav.Link href="#tarifs">Tarifs</Nav.Link>
-            <Nav.Link href="#informations">À propos</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            {header &&
+              header.map((headerT, index) => (
+                <Nav.Link key={index} href={headerT.href}>{headerT.text}</Nav.Link>
+              ))}
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,71 +1,71 @@
+import { type ReactElement } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { FaCode, FaEye, FaList, FaMobileAlt, FaSearch } from "react-icons/fa";
 
-const Services = () => {
+type ServicesProps = {
+  size: number;
+  icon: ReactElement<any, any>;
+  title: string;
+  description: string;
+};
+
+const Services: React.FC = () => {
+
+  const services: ServicesProps[] = [
+    {
+      size: 6,
+      icon: <FaCode size={40} className="mb-3 text-primary" />,
+      title: "Développement Web",
+      description:
+        "Création de sites sur-mesure performants avec React, Laravel ou WordPress.",
+    },
+    {
+      size: 6,
+      icon: <FaMobileAlt size={40} className="mb-3 text-success" />,
+      title: "Responsive Design",
+      description:
+        "Des interfaces adaptées à tous les écrans, du mobile au desktop.",
+    },
+    {
+      size: 4,
+      icon: <FaSearch size={40} className="mb-3 text-warning" />,
+      title: "SEO & Performance",
+      description:
+        "Optimisation du référencement naturel et de la vitesse de chargement.",
+    },
+    {
+      size: 4,
+      icon: <FaEye size={40} className="mb-3 text-danger" />,
+      title: "Audit",
+      description:
+        "Analyse et audit de votre stratégie numérique en place et recommandations",
+    },
+    {
+      size: 4,
+      icon: <FaList size={40} className="mb-3 text-info" />,
+      title: "Conseils",
+      description:
+        "Conseils en stratégie numérique, séance d'une heure de formation aux basiques du web",
+    },
+  ];
+
   return (
     <section id="services" className="py-5 bg-white">
       <Container>
         <h2 className="text-center mb-4">Mes Services</h2>
         <Row className="g-4">
-          <Col md={6}>
-            <Card className="text-center">
-              <Card.Body>
-                <FaCode size={40} className="mb-3 text-primary" />
-                <Card.Title>Développement Web</Card.Title>
-                <Card.Text>
-                  Création de sites sur-mesure performants avec React, Laravel
-                  ou WordPress.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={6}>
-            <Card className="text-center">
-              <Card.Body>
-                <FaMobileAlt size={40} className="mb-3 text-success" />
-                <Card.Title>Responsive Design</Card.Title>
-                <Card.Text>
-                  Des interfaces adaptées à tous les écrans, du mobile au
-                  desktop.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card className="text-center">
-              <Card.Body>
-                <FaSearch size={40} className="mb-3 text-warning" />
-                <Card.Title>SEO & Performance</Card.Title>
-                <Card.Text>
-                  Optimisation du référencement naturel et de la vitesse de
-                  chargement.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card className="text-center">
-              <Card.Body>
-                <FaEye size={40} className="mb-3 text-danger" />
-                <Card.Title>Audit</Card.Title>
-                <Card.Text>
-                  Analyse et audit de votre stratégie numérique en place et
-                  recommandations
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card className="text-center">
-              <Card.Body>
-                <FaList size={40} className="mb-3 text-info" />
-                <Card.Title>Conseils</Card.Title>
-                <Card.Text>
-                  Conseils en stratégie numérique, séance d'une heure de formation aux basiques du web
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
+          {services &&
+            services.map((service, index) => (
+              <Col md={service.size} key={index}>
+                <Card className="text-center">
+                  <Card.Body>
+                    {service.icon}
+                    <Card.Title>{service.title}</Card.Title>
+                    <Card.Text>{service.description}</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
         </Row>
       </Container>
     </section>

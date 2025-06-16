@@ -1,10 +1,9 @@
 import { Container, Button } from "react-bootstrap";
-import "./Hero.css"; // on va y mettre le style spécifique
+import "./Hero.css";
 
 const Hero = () => {
   return (
     <section id="accueil" className="hero-section position-relative">
-      {/* Vidéo en fond */}
       <video
         className="hero-video"
         autoPlay
@@ -12,14 +11,12 @@ const Hero = () => {
         muted
         playsInline
       >
-        <source src="/assets/13745411_3840_2160_24fps.mp4" type="video/mp4" />
+        <source src="assets/13745411_3840_2160_24fps.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-      {/* Overlay sombre pour lisibilité */}
       <div className="hero-overlay"></div>
 
-      {/* Contenu texte au-dessus */}
       <div className="hero-content text-white text-center">
         <Container>
           <h1 className="display-4 fw-bold">

@@ -12,7 +12,7 @@ const Footer = () => {
             </p>
             <p className="mb-1">Adresse : 99 Vieille Route de la Gavotte, Résidence le Clos Idéal, Bâtiement B3-2, 13 170 Les Pennes-Mirabeau</p>
             <p className="mb-1">Email : devmattmar@gmail.com</p>
-            <p className="mb-0">Hébergeur : Hostinger, 61 Lordou Vironos str. 6023 Larnaca, Chypre</p>
+            <p className="mb-0">Hébergeur : GitHub Pages</p>
           </Col>
         </Row>
         <hr className="border-light" />
