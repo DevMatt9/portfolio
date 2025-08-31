@@ -11,7 +11,7 @@ const Footer = () => {
             <p className="mb-1">
               Site édité par Matthieu Mariani — Micro-entreprise, SIRET 912 980 174 00029
             </p>
-            <p className="mb-1">📍 99 Vieille Route de la Gavotte, Résidence le Clos Idéal, Bâtiment B3-2<br />13 170, Les Pennes-Mirabeau</p>
+            <p className="mb-1">📍 Marseille</p>
             <p className="mb-1">📧 <a href="mailto:devmattmar@gmail.com" className="text-light">devmattmar@gmail.com</a></p>
             <p className="mb-0">🖥️ Hébergeur : GitHub Pages</p>
           </Col>
