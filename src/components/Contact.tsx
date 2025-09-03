@@ -57,14 +57,17 @@ const Contact = () => {
     <section id="contact" className="bg-light">
       <Container style={{ maxWidth: "700px" }}>
         <div className="text-center mb-4">
-          <h2 className="mb-2">📬 Me Contacter</h2>
+          <h2 className="mb-2">Me Contacter</h2>
           <p className="text-muted">
             Une question, un projet ou juste envie de dire bonjour ? <br />
             Je réponds à tous les messages (sauf aux spams 🍕).
           </p>
         </div>
 
-        <Form onSubmit={handleSubmit(onSubmit)} className="p-4 border rounded shadow-sm bg-white">
+        <Form
+          onSubmit={handleSubmit(onSubmit)}
+          className="p-4 border rounded shadow-sm bg-white"
+        >
           <Row>
             <Col md={6}>
               <Form.Group className="mb-3" controlId="formName">
@@ -112,8 +115,13 @@ const Contact = () => {
           </Form.Group>
 
           <div className="text-center">
-            <Button variant="success" type="submit" size="lg" className="px-5">
-              🚀 Envoyer
+            <Button
+              variant="outline-success"
+              type="submit"
+              size="lg"
+              className="px-5"
+            >
+              📬 Envoyer
             </Button>
           </div>
         </Form>
@@ -134,7 +142,9 @@ const Contact = () => {
           <Toast.Header closeButton>
             <strong className="me-auto">✅ Message envoyé</strong>
           </Toast.Header>
-          <Toast.Body>Merci pour votre message ! Je reviens vite vers vous 😄</Toast.Body>
+          <Toast.Body>
+            Merci pour votre message ! Je reviens vite vers vous 😄
+          </Toast.Body>
         </Toast>
       </Container>
     </section>

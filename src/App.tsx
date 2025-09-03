@@ -13,13 +13,18 @@ function Portfolio() {
       <Header />
       <Hero />
       <Services />
-      <Separator position="top" color="#f8f9fa" />
+      <Separator position="top" color="#0D6EFD" />
       <Tarifs />
-      <Separator position="bottom" color="#f8f9fa" invertX />
+      <Separator position="bottom" color="#0D6EFD" invertX />
       <Informations />
       <Separator position="top" color="#f8f9fa" />
       <Contact />
-      <Separator position="top" color="#212529" backgroundColor="#f8f9fa" invertX/>
+      <Separator
+        position="top"
+        color="#212529"
+        backgroundColor="#f8f9fa"
+        invertX
+      />
       <Footer />
     </>
   );

@@ -17,33 +17,31 @@ const Tarifs: React.FC = () => {
       price: "500 à 1 000 €",
       description:
         "Une page professionnelle, responsive, rapide à mettre en place.",
-      cta: "Choisir",
+      cta: "🛒 Choisir",
       img: "assets/landing-page.png",
     },
     {
       size: 4,
       title: "Site vitrine",
       price: "800 à 3 000 €",
-      description:
-        "3 à 5 pages, formulaire de contact, responsive, optimisé.",
-      cta: "Choisir",
+      description: "3 à 5 pages, formulaire de contact, responsive, optimisé.",
+      cta: "🛒 Choisir",
       img: "assets/website.jpg",
     },
     {
       size: 4,
       title: "Site sur-mesure",
       price: "Sur devis",
-      description:
-        "Développement personnalisé avec fonctionnalités avancées.",
-      cta: "Choisir",
+      description: "Développement personnalisé avec fonctionnalités avancées.",
+      cta: "🛒 Choisir",
       img: "assets/custom-website.jpg",
     },
   ];
 
   return (
-    <section id="tarifs" className="bg-light">
+    <section id="tarifs" className="bg-primary">
       <Container>
-        <h2 className="text-center mb-4">💼 Mes Tarifs</h2>
+        <h2 className="text-center mb-4 text-white">Mes Tarifs</h2>
         <Row className="g-4 justify-content-center">
           {tarifs.map((tarif, index) => (
             <Col md={tarif.size} key={index}>
@@ -54,8 +52,10 @@ const Tarifs: React.FC = () => {
                   <Card.Text className="display-6 text-primary fw-bold">
                     {tarif.price}
                   </Card.Text>
-                  <Card.Text className="flex-grow-1">{tarif.description}</Card.Text>
-                  <Button variant="success" href="#contact">
+                  <Card.Text className="flex-grow-1">
+                    {tarif.description}
+                  </Card.Text>
+                  <Button variant="outline-success" href="#contact">
                     {tarif.cta}
                   </Button>
                 </Card.Body>

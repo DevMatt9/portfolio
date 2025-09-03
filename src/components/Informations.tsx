@@ -17,13 +17,21 @@ const Informations = () => {
           </Col>
           <Col md={6}>
             <p>
-              Développeur passionné par le web, je crée des sites modernes,
-              rapides et sur-mesure. Mon objectif : offrir des solutions
-              élégantes et performantes, adaptées à vos besoins.
+              💻 Ingénieur Digitalisation avec un parcours de développeur et
+              webmaster, j’ai évolué vers la gestion et l’optimisation de
+              projets digitaux.
             </p>
+
             <p>
-              Basé à Marseille, je travaille avec des clients de tous horizons,
-              en apportant une approche humaine et transparente.
+              🚀 J’accompagne les entreprises dans la mise en place de leur
+              solutions digitales, le développement front-end (HTML, CSS,
+              JavaScript, React) et back-end (PHP, MySQL, Laravel, API Rest) et
+              l’optimisation des processus.
+            </p>
+
+            <p>
+              🤝 Orienté client, je combine expertise technique et pilotage pour
+              délivrer des solutions digitales performantes et adaptées.
             </p>
           </Col>
         </Row>

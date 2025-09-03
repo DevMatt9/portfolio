@@ -10,7 +10,6 @@ type ServicesProps = {
 };
 
 const Services: React.FC = () => {
-
   const services: ServicesProps[] = [
     {
       size: 6,

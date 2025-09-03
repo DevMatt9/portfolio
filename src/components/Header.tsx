@@ -40,7 +40,9 @@ const Header: React.FC = () => {
           <Nav>
             {header &&
               header.map((headerT, index) => (
-                <Nav.Link key={index} href={headerT.href}>{headerT.text}</Nav.Link>
+                <Nav.Link key={index} href={headerT.href}>
+                  {headerT.text}
+                </Nav.Link>
               ))}
           </Nav>
         </Navbar.Collapse>
