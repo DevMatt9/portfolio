@@ -5,6 +5,7 @@ import Tarifs from "./components/Tarifs";
 import Informations from "./components/Informations";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Separator from "./components/Separator";
 
 function Portfolio() {
   return (
@@ -12,9 +13,13 @@ function Portfolio() {
       <Header />
       <Hero />
       <Services />
+      <Separator position="top" color="#f8f9fa" />
       <Tarifs />
+      <Separator position="bottom" color="#f8f9fa" invertX />
       <Informations />
+      <Separator position="top" color="#f8f9fa" />
       <Contact />
+      <Separator position="top" color="#212529" backgroundColor="#f8f9fa" invertX/>
       <Footer />
     </>
   );

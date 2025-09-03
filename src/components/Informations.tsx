@@ -2,7 +2,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 
 const Informations = () => {
   return (
-    <section id="informations" className="py-5 bg-white">
+    <section id="informations" className="bg-white">
       <Container>
         <h2 className="text-center mb-4">À propos</h2>
         <Row className="align-items-center">

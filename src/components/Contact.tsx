@@ -54,7 +54,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-5 bg-light">
+    <section id="contact" className="bg-light">
       <Container style={{ maxWidth: "700px" }}>
         <div className="text-center mb-4">
           <h2 className="mb-2">📬 Me Contacter</h2>

@@ -41,7 +41,7 @@ const Tarifs: React.FC = () => {
   ];
 
   return (
-    <section id="tarifs" className="py-5 bg-light">
+    <section id="tarifs" className="bg-light">
       <Container>
         <h2 className="text-center mb-4">💼 Mes Tarifs</h2>
         <Row className="g-4 justify-content-center">

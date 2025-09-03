@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light pt-5 pb-3">
+    <footer className="bg-dark text-light pb-3">
       <Container>
         <Row className="mb-4">
           <Col md={6}>
@@ -27,7 +27,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="mt-3 mb-0 small">
-              🤓 Développé avec tendresse (bon et un peu React aussi !)
+              🤓 Développé avec mes 10 doigts (bon et un peu React aussi !)
             </p>
           </Col>
         </Row>

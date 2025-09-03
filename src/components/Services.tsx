@@ -50,7 +50,7 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section id="services" className="py-5 bg-white">
+    <section id="services" className="pt-5 bg-white">
       <Container>
         <h2 className="text-center mb-4">Mes Services</h2>
         <Row className="g-4">
